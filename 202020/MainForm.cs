@@ -33,7 +33,7 @@ namespace _202020
             trayIcon = new NotifyIcon();
             trayIcon.Icon = Properties.Resources.eye_32px; // Use the embedded icon resource
             trayIcon.Visible = true;
-            trayIcon.Text = "202020 - Running";
+            trayIcon.Text = "202020 - Screen System Eye Protection";
             trayIcon.ContextMenu = new ContextMenu(new MenuItem[]
             {
                 new MenuItem("Exit", OnExit) // Prevent user from exiting the app easily

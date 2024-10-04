@@ -124,6 +124,9 @@
   <data name="eye_512px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eye_512px.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="JPG_eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\JPG_eye.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="PNG_eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PNG_eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

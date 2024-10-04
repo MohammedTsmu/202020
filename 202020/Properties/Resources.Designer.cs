@@ -83,6 +83,16 @@ namespace _202020.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap JPG_eye {
+            get {
+                object obj = ResourceManager.GetObject("JPG_eye", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap PNG_eye {
             get {
                 object obj = ResourceManager.GetObject("PNG_eye", resourceCulture);

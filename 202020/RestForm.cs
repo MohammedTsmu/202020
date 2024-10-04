@@ -7,7 +7,7 @@ namespace _202020
     public partial class RestForm : Form
     {
         private Timer restTimer;
-        private int restTime = 30; // 20 seconds rest
+        private int restTime = 30; // 30 seconds rest
         private bool allowClose = false; // Control to allow closing only when timer ends
 
         public RestForm()
