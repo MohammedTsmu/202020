@@ -67,4 +67,4 @@ Contributions are welcome! Feel free to submit issues or pull requests to improv
 
 ## Contact
 
-If you have any questions, you can reach out to the project maintainer via [GitHub](https://github.com/your-username).
+If you have any questions, you can reach out to the project maintainer via [GitHub](https://github.com/MohammedTsmu).
