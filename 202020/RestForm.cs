@@ -23,8 +23,21 @@ namespace _202020
             this.WindowState = FormWindowState.Maximized;
             this.TopMost = true;
             this.BackColor = Color.Gray; // Customize the background color
-            this.Opacity = 0.9; // Slight opacity to make it more advanced
+            this.Opacity = 1; // Full opacity for the rest screen
 
+            // Create a TableLayoutPanel to manage layout
+            TableLayoutPanel layout = new TableLayoutPanel
+            {
+                Dock = DockStyle.Fill,
+                ColumnCount = 1,
+                RowCount = 2,
+                BackColor = Color.Gray // Set background color for the layout
+            };
+
+            layout.RowStyles.Add(new RowStyle(SizeType.Percent, 70F)); // 70% space for countdown label
+            layout.RowStyles.Add(new RowStyle(SizeType.Percent, 30F)); // 30% space for eye care text
+
+            // Countdown label
             Label countdownLabel = new Label
             {
                 Text = restTime.ToString(),
@@ -33,8 +46,24 @@ namespace _202020
                 Dock = DockStyle.Fill,
                 TextAlign = ContentAlignment.MiddleCenter
             };
-            this.Controls.Add(countdownLabel);
 
+            // Eye care text label
+            Label eyeCareTextLabel = new Label
+            {
+                Text = "Rest your eyes and focus on an object 20 feet (6 meters) away for 20-30 seconds.",
+                Font = new Font("Arial", 18, FontStyle.Bold),
+                ForeColor = Color.White,
+                Dock = DockStyle.Fill,
+                TextAlign = ContentAlignment.MiddleCenter
+            };
+
+            // Add labels to the layout
+            layout.Controls.Add(countdownLabel, 0, 0); // Countdown label at the top
+            layout.Controls.Add(eyeCareTextLabel, 0, 1); // Eye care text at the bottom
+
+            this.Controls.Add(layout); // Add the layout to the form
+
+            // Timer tick event for countdown
             restTimer.Tick += (sender, e) =>
             {
                 restTime--;
