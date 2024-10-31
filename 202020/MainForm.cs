@@ -2,6 +2,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.IO;
 
 namespace _202020
 {
@@ -18,13 +19,6 @@ namespace _202020
             SetupSystemTray();
             InitializeWorkTimer();
             HideMainWindow(); // Hide the main window immediately
-        }
-
-        // Add application to Windows Startup (optional method)
-        private void AddToStartup()
-        {
-            RegistryKey key = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Run", true);
-            key.SetValue("202020", Application.ExecutablePath.ToString());
         }
 
         // Set up the system tray icon
