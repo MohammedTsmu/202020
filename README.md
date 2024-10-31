@@ -60,7 +60,7 @@ private int restTime = 20; // Change the rest duration from 20 seconds to any de
 This project is licensed under the AGPL-3.0 license. See the `LICENSE` file for details.
 
 ## Developer
-Dr. Mohammed
+Dr. Mohammed Qasim
 ## Contributing
 
 Contributions are welcome! Feel free to submit issues or pull requests to improve this project.
